@@ -1,0 +1,14 @@
+<h2>Sign up</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, :autofocus => true %> 
+  <%= f.input :email, :required => true %>
+  <%= f.input :password, :required => true %>
+  <%= f.input :password_confirmation, :required => true %>
+  <%= f.input :city, :required => true %>
+  <%= f.input :gmaps, :label => 'Do you have the flu?', :as => :radio_buttons, :collection => ["Yes", "No"], :required => true, :value_method => :last %>
+  <%= f.button :submit, 'Sign up', :class => 'btn-primary' %>
+
+<% end %>
+<%= render "devise/shared/links" %>

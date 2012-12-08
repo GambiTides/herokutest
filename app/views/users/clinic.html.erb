@@ -1,0 +1,29 @@
+<div class="container">
+<h1>10 Nearby Clinics</h1>
+
+<div class="span7 offset2">
+<table class="table table-striped">
+	<tr>
+	    <th><h4>Clinic Info</h4></th>
+	    <th><h4>Map</h4></th>
+	</tr> 	
+<% @spotList.take(10).each do |x| %>
+ 	<tr>
+		<td><h5>Name:</h5> <%= x.name %><br/>
+			<h5>Address:</h5> <%= x.vicinity %><br/>
+			<h5>More Info:</h5> <% @link = 'http://maps.google.com/?q=' + x.vicinity %><%= link_to 'on Google Maps', @link %></td>
+		
+		<td><%= raw image = StaticMap::Image.new({
+		  size: '250x250',
+		  sensor: false,
+		  zoom: 15,
+		  title: 'Clinic',
+		  alt: 'Static Map of Clinic',
+		  markers: [{ latitude: x.lat, longitude: x.lng, color: "blue"}]
+	   	})
+		%></td>
+	</tr>
+<% end %>
+</table>
+</div>
+</div>

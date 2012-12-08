@@ -1,0 +1,22 @@
+<div class="container">
+<h1>FluTracker Map</h1>
+
+<center>
+<p><%= gmaps(:markers => {:data => @json, :options => {:do_clustering => true, :clusterer_maxZoom => 200}}) %></p>
+<div class="span6 offset3">
+<table class="table table-condensed">
+  <tr>
+    <th>City</th>
+    <th>Flu?</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.city %></td>
+    <td><%= user.gmaps %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</center>
+</div>

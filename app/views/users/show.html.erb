@@ -1,0 +1,25 @@
+<h2>Account Info</h2>
+
+<p><%= link_to 'Edit Account Info', edit_user_registration_path, class: "btn" %></p>
+<table class="table">
+    <tr>
+        <th scope="row">User</th>
+        <td><%= @user.name %></td>
+    </tr>
+    <tr>
+        <th scope="row">Email</th>
+        <td><%= @user.email if @user.email %></td>
+    </tr>
+    <tr>
+        <th scope="row">City</th>
+        <td><%= @user.city %></td>
+    </tr>
+    <tr>
+        <th scope="row">Flu?</th>
+        <td><%= @user.gmaps %></td>
+    </tr>
+</table>
+
+<p><%= link_to 'Step 2: Track the Flu', map_path, class: "btn btn-large btn-info" %></p>
+<br/>
+<p><%= link_to 'Step 3: Find Clinics', clinic_path, class: "btn btn-large btn-info" %></p>

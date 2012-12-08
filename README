@@ -1,0 +1,33 @@
+FluTracker
+============================================
+
+A Rails web application for tracking the flu with Google Maps. 
+
+Requires Ruby 1.9.3p327, Rails 3.2.8, and RubyGems 1.8.24
+
+Uses Devise for user management and authentication, CanCan for authorization of administrator access, and Twitter Bootstrap for CSS styling.
+
+Devise
+http://github.com/plataformatec/devise
+
+CanCan
+https://github.com/ryanb/cancan
+
+Twitter Bootstrap
+http://twitter.github.com/bootstrap/
+
+________________________
+
+Largely influenced by the railsapps gems & tutorials:
+
+https://github.com/apneadiving/Google-Maps-for-Rails
+
+http://ruby.railstutorial.org/
+
+https://github.com/railsapps/rails3-bootstrap-devise-cancan
+
+________________________
+
+MIT License
+
+http://www.opensource.org/licenses/mit-license

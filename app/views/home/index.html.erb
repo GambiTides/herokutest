@@ -1,0 +1,60 @@
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://i41.photobucket.com/albums/e260/AnruiXin/flutracker/pic3.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome to FluTracker.</h1>
+              <p class="lead">Add yourself to the map.</p>
+              <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://i41.photobucket.com/albums/e260/AnruiXin/flutracker/pic1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Check flu symptoms and progress.</h1>
+              <p class="lead">What are the indications?</p>
+              <a class="btn btn-large btn-primary" href="http://www.flu.gov/symptoms-treatment/symptoms/index.html">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://i41.photobucket.com/albums/e260/AnruiXin/flutracker/pic2-1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Find a doctor near you</h1>
+              <p class="lead">Get a flu shot, or other healthcare you need.</p>
+              <%= link_to "Check here", clinic_path, class: "btn btn-large btn-primary" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+    
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src="http://www.clker.com/cliparts/R/r/2/q/P/4/blue-number-one-th.png">
+          <h3>Sign Up</h3>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="http://www.clker.com/cliparts/s/7/2/p/b/j/blue-number-2-th.png">
+          <h3>Track the flu</h3>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="http://www.clker.com/cliparts/i/g/h/u/S/J/blue-number-3-th.png">
+          <h3>Check for clinics</h3>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
